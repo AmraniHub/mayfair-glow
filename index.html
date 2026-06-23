@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mayfair Glow by Khaoula — Sourcils, Cils &amp; Lèvres Parfaits | Fès</title>
+  <meta name="description" content="Mayfair Glow by Khaoula — Sourcils sculptés, extensions de cils, glaçage des lèvres et maquillage professionnel à Fès. Résultats naturels, définis et élégants. Prenez RDV maintenant." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','PIXEL_ID_HERE');
+  fbq('track','PageView');
+  fbq('track','ViewContent');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=PIXEL_ID_HERE&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --plum:        #6B1F3A;
+      --deep-plum:   #3D0F20;
+      --medium-plum: #8B2B4C;
+      --light-rose:  #F9EEF3;
+      --dusty-rose:  #D4849A;
+      --gold:        #C9A840;
+      --gold-light:  #FBF5E0;
+      --bg:          #FBF5F0;
+      --surface:     #ffffff;
+      --surface2:    #F5ECF1;
+      --text:        #2A0A15;
+      --muted:       #7A4459;
+      --dark:        #2A0A15;
+      --grad:        linear-gradient(135deg, #8B2B4C 0%, #3D0F20 100%);
+      --grad-gold:   linear-gradient(135deg, #C9A840 0%, #A8883A 100%);
+      --grad-soft:   linear-gradient(135deg, #FBF5E0 0%, #F9EEF3 60%, #FBF5E0 100%);
+      --shadow:      0 4px 24px rgba(107,31,58,0.15);
+      --shadow-lg:   0 8px 48px rgba(107,31,58,0.22);
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Cairo', sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; font-size: 1rem; overflow-x: hidden; }
+
+    ::-webkit-scrollbar { width: 5px; }
+    ::-webkit-scrollbar-track { background: var(--light-rose); }
+    ::-webkit-scrollbar-thumb { background: var(--dusty-rose); border-radius: 3px; }
+
+    /* ── ANNOUNCE BAR ── */
+    .announce-bar {
+      background: var(--grad);
+      color: #fff;
+      text-align: center;
+      padding: 10px 16px;
+      font-size: .85rem;
+      font-weight: 700;
+      letter-spacing: .3px;
+      position: relative;
+      z-index: 101;
+    }
+    .announce-bar .dot {
+      display: inline-block;
+      width: 7px; height: 7px;
+      background: var(--gold);
+      border-radius: 50%;
+      margin: 0 6px;
+      animation: blink 1.4s ease-in-out infinite;
+      vertical-align: middle;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(61,15,32,0.97);
+      backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
+      padding: 0 44px; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      box-shadow: 0 2px 24px rgba(61,15,32,.4);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 11px; text-decoration: none; }
+    .nav-logo-icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      background: var(--grad);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+      border: 1.5px solid rgba(201,168,64,.35);
+    }
+    .nav-logo-text { line-height: 1.15; }
+    .nav-logo-text .name { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 700; color: #fff; letter-spacing: .5px; }
+    .nav-logo-text .sub  { font-size: .68rem; font-weight: 600; color: var(--gold); letter-spacing: 1.2px; text-transform: uppercase; }
+    .nav-actions { display: flex; align-items: center; gap: 10px; }
+    .nav-wa {
+      display: flex; align-items: center; gap: 6px;
+      background: #25D366; color: #fff;
+      font-family: 'Cairo',sans-serif; font-weight: 900; font-size: .82rem;
+      border-radius: 50px; padding: 8px 16px; text-decoration: none;
+      transition: transform .15s, box-shadow .15s; white-space: nowrap;
+    }
+    .nav-wa:hover { transform: scale(1.05); box-shadow: 0 4px 16px rgba(37,211,102,.45); }
+    .nav-cta {
+      background: var(--grad-gold); color: var(--deep-plum);
+      border: none; border-radius: 50px; padding: 9px 22px;
+      font-family: 'Cairo', sans-serif; font-size: .88rem; font-weight: 900;
+      cursor: pointer; text-decoration: none; transition: all .2s; white-space: nowrap;
+    }
+    .nav-cta:hover { opacity: .9; transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 56px 64px 64px;
+      background: var(--grad-soft);
+      position: relative; overflow: hidden;
+    }
+    .hero::before {
+      content: ''; position: absolute;
+      width: 700px; height: 700px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(201,168,64,.08) 0%, transparent 70%);
+      top: -250px; right: -200px; pointer-events: none;
+    }
+    .hero::after {
+      content: '✦'; position: absolute;
+      font-size: 6rem; opacity: .04;
+      bottom: -20px; left: 40px; color: var(--plum);
+    }
+    .hero-inner {
+      max-width: 1120px; width: 100%; margin: 0 auto;
+      display: flex; align-items: flex-start; gap: 64px; position: relative; z-index: 1;
+    }
+    .hero-text { flex: 1 1 500px; }
+
+    .badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--light-rose); border: 1.5px solid var(--dusty-rose);
+      color: var(--medium-plum); border-radius: 50px; padding: 5px 15px;
+      font-size: .8rem; font-weight: 700; margin-bottom: 20px;
+      letter-spacing: .3px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+      font-weight: 700; line-height: 1.2; color: var(--deep-plum); margin-bottom: 14px;
+    }
+    h1 .accent { color: var(--plum); font-style: italic; }
+    h1 .gold   { color: var(--gold); }
+
+    .hero-tagline {
+      font-size: 1rem; font-weight: 600; color: var(--gold);
+      letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .hero-tagline span { margin: 0 8px; opacity: .5; }
+
+    /* Trust pills */
+    .trust-strip { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 22px; }
+    .trust-item {
+      display: flex; align-items: center; gap: 6px;
+      background: rgba(107,31,58,.07); border: 1px solid rgba(107,31,58,.15);
+      border-radius: 50px; padding: 5px 13px;
+      font-size: .8rem; font-weight: 700; color: var(--deep-plum);
+    }
+
+    .hero-sub { font-size: .97rem; color: var(--muted); max-width: 460px; line-height: 1.8; }
+
+    /* form col */
+    .hero-form-col { flex: 0 0 380px; }
+    .form-card {
+      background: var(--surface); border-radius: 22px;
+      box-shadow: var(--shadow-lg); overflow: hidden;
+      border: 1px solid rgba(107,31,58,.12);
+    }
+    .form-card-top {
+      background: var(--grad); padding: 20px 26px; text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .form-card-top::before {
+      content: '✦'; position: absolute;
+      font-size: 4rem; opacity: .08;
+      top: -10px; right: 10px; color: #fff;
+    }
+    .form-card-top h2 { color: #fff; font-family: 'Cormorant Garamond',serif; font-size: 1.3rem; font-weight: 700; }
+    .form-card-top p  { color: rgba(255,255,255,.82); font-size: .81rem; margin-top: 4px; }
+    .form-card-top .gold-pill {
+      display: inline-block; background: rgba(201,168,64,.2); border: 1px solid rgba(201,168,64,.4);
+      border-radius: 50px; padding: 3px 13px; font-size: .74rem; color: var(--gold);
+      font-weight: 700; margin-top: 8px; letter-spacing: .5px;
+    }
+    .form-card-body { padding: 24px; }
+
+    .field { margin-bottom: 14px; }
+    .field label { display: block; font-size: .84rem; font-weight: 700; color: var(--deep-plum); margin-bottom: 5px; }
+    .field input, .field select {
+      width: 100%; border: 1.5px solid var(--dusty-rose); border-radius: 10px;
+      padding: 12px 14px; font-family: 'Cairo', sans-serif; font-size: 16px;
+      color: var(--text); background: #fff; outline: none;
+      transition: border-color .2s, box-shadow .2s; appearance: none; -webkit-appearance: none;
+    }
+    .field input:focus, .field select:focus {
+      border-color: var(--plum); box-shadow: 0 0 0 3px rgba(107,31,58,.1);
+    }
+    .field input::placeholder { color: #c4a0b0; }
+    .select-wrap { position: relative; }
+    .select-wrap::after {
+      content: '▾'; position: absolute; right: 14px; top: 50%;
+      transform: translateY(-50%); color: var(--plum); pointer-events: none;
+    }
+
+    .submit-btn {
+      width: 100%; background: var(--grad); color: #fff; border: none;
+      border-radius: 50px; padding: 15px 24px;
+      font-family: 'Cairo', sans-serif; font-size: 1rem; font-weight: 900;
+      cursor: pointer; transition: opacity .2s, transform .15s; margin-top: 4px;
+      box-shadow: 0 6px 24px rgba(107,31,58,.35);
+    }
+    .submit-btn:hover  { opacity: .9; transform: translateY(-2px); }
+    .submit-btn:disabled { opacity: .6; cursor: not-allowed; }
+    .form-note { text-align: center; font-size: .75rem; color: var(--muted); margin-top: 10px; }
+
+    /* reviews */
+    .reviews { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+    .review-item {
+      background: var(--surface2); border-radius: 14px; padding: 13px 15px;
+      display: flex; align-items: flex-start; gap: 10px;
+      border: 1px solid rgba(107,31,58,.09);
+    }
+    .review-avatar { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid var(--dusty-rose); }
+    .review-header { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+    .review-name  { font-size: .84rem; font-weight: 700; color: var(--deep-plum); }
+    .review-stars { color: var(--gold); font-size: .78rem; }
+    .review-text  { font-size: .8rem; color: var(--muted); margin-top: 3px; line-height: 1.6; }
+    .review-tag   { display: inline-block; margin-top: 4px; font-size: .69rem; background: var(--light-rose); color: var(--medium-plum); border-radius: 50px; padding: 1px 8px; font-weight: 700; }
+
+    /* ── SECTION SHARED ── */
+    .section-label { text-align: center; font-size: .78rem; font-weight: 700; color: var(--plum); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+    .section-title {
+      text-align: center; font-family: 'Cormorant Garamond',serif;
+      font-size: clamp(1.6rem, 3.2vw, 2.4rem); font-weight: 700; color: var(--deep-plum); margin-bottom: 10px; line-height: 1.25;
+    }
+    .section-title .accent { color: var(--plum); font-style: italic; }
+    .section-sub { text-align: center; color: var(--muted); font-size: .92rem; margin-bottom: 40px; max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+
+    /* ── SERVICES ── */
+    .services-section { max-width: 1080px; margin: 0 auto; padding: 72px 40px; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+    .service-card {
+      background: var(--surface); border-radius: 20px; overflow: hidden;
+      border: 1.5px solid rgba(107,31,58,.1); transition: transform .28s, box-shadow .28s, border-color .28s; cursor: pointer;
+    }
+    .service-card:hover { transform: translateY(-7px); box-shadow: var(--shadow-lg); border-color: var(--plum); }
+    .service-img-wrap {
+      height: 170px; background: var(--grad-soft); position: relative; overflow: hidden;
+    }
+    .service-img-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; }
+    .service-badge {
+      position: absolute; top: 10px; left: 10px; background: var(--grad); color: #fff;
+      border-radius: 50px; padding: 3px 11px; font-size: .7rem; font-weight: 700; z-index: 2;
+    }
+    .service-body { padding: 18px 20px 20px; }
+    .service-icon { font-size: 1.4rem; margin-bottom: 6px; }
+    .service-name { font-family: 'Cormorant Garamond',serif; font-size: 1.1rem; font-weight: 700; color: var(--deep-plum); margin-bottom: 6px; }
+    .service-desc { font-size: .84rem; color: var(--muted); margin-bottom: 14px; line-height: 1.65; }
+    .service-footer { display: flex; align-items: center; justify-content: space-between; }
+    .service-price { font-size: 1.1rem; font-weight: 900; color: var(--gold); }
+    .service-price span { font-size: .73rem; font-weight: 600; color: var(--muted); }
+    .service-btn {
+      background: var(--light-rose); color: var(--medium-plum); border: none;
+      border-radius: 50px; padding: 7px 16px; font-family: 'Cairo',sans-serif;
+      font-size: .8rem; font-weight: 700; cursor: pointer; transition: background .2s, color .2s; text-decoration: none;
+    }
+    .service-btn:hover { background: var(--plum); color: #fff; }
+
+    /* ── BEFORE/AFTER ── */
+    .ba-section { background: var(--bg); padding: 72px 40px; }
+    .ba-grid { max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; }
+    .ba-card { background: #fff; border-radius: 20px; overflow: hidden; box-shadow: 0 6px 32px rgba(107,31,58,.10); border: 1.5px solid rgba(107,31,58,.10); }
+    .ba-slider { position: relative; width: 100%; aspect-ratio: 4/3; overflow: hidden; cursor: ew-resize; user-select: none; }
+    .ba-before, .ba-after { position: absolute; inset: 0; }
+    .ba-before img, .ba-after img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .ba-after { clip-path: inset(0 50% 0 0); transition: clip-path .05s linear; }
+    .ba-handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 2px; background: #fff; transform: translateX(-50%); pointer-events: none; }
+    .ba-handle::before { content: ''; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 38px; height: 38px; border-radius: 50%; background: var(--grad); box-shadow: 0 2px 12px rgba(107,31,58,.5); }
+    .ba-handle::after { content: '↔'; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); color: #fff; font-size: .85rem; }
+    .ba-labels { display: flex; justify-content: space-between; padding: 4px 10px 0; }
+    .ba-label { font-size: .67rem; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
+    .ba-label.before { color: #bbb; }
+    .ba-label.after  { color: var(--plum); }
+    .ba-body { padding: 14px 16px 16px; }
+    .ba-service { font-size: .75rem; font-weight: 700; color: var(--plum); text-transform: uppercase; letter-spacing: .6px; margin-bottom: 4px; }
+    .ba-result  { font-size: .92rem; font-weight: 800; color: var(--deep-plum); margin-bottom: 4px; }
+    .ba-note    { font-size: .78rem; color: var(--muted); }
+
+    /* ── WHY US ── */
+    .why-section { background: var(--surface); padding: 72px 40px; }
+    .why-grid { max-width: 1060px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+    .why-card {
+      border-radius: 18px; padding: 28px 22px; text-align: center;
+      border: 1.5px solid rgba(107,31,58,.1); transition: transform .28s, border-color .28s, box-shadow .28s;
+      background: var(--bg);
+    }
+    .why-card:hover { transform: translateY(-6px); border-color: var(--plum); box-shadow: var(--shadow-lg); }
+    .why-icon  { font-size: 2.2rem; margin-bottom: 13px; }
+    .why-title { font-family: 'Cormorant Garamond',serif; font-size: 1.05rem; font-weight: 700; color: var(--deep-plum); margin-bottom: 7px; }
+    .why-desc  { font-size: .84rem; color: var(--muted); line-height: 1.7; }
+
+    /* ── STATS ── */
+    .stats-band {
+      background: var(--grad); padding: 56px 40px; position: relative; overflow: hidden;
+    }
+    .stats-band::before { content:''; position:absolute; width:500px; height:500px; border-radius:50%; background:rgba(255,255,255,.05); top:-200px; right:-100px; }
+    .stats-band::after  { content:''; position:absolute; width:300px; height:300px; border-radius:50%; background:rgba(201,168,64,.07); bottom:-100px; left:-50px; }
+    .stats-inner { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px,1fr)); gap: 30px; text-align: center; position: relative; z-index: 1; }
+    .stat-number { font-family: 'Cormorant Garamond',serif; font-size: 2.8rem; font-weight: 700; color: var(--gold); line-height: 1; display: block; }
+    .stat-label  { font-size: .88rem; color: rgba(255,255,255,.82); margin-top: 6px; display: block; }
+
+    /* ── HOW IT WORKS ── */
+    .how-section { background: var(--dark); padding: 72px 40px; }
+    .how-section .section-label { color: rgba(255,255,255,.4); }
+    .how-section .section-title { color: #fff; }
+    .how-section .section-sub { color: rgba(255,255,255,.58); }
+    .how-steps {
+      max-width: 860px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 36px;
+    }
+    .how-step { text-align: center; color: #fff; }
+    .how-num {
+      width: 60px; height: 60px; border-radius: 50%; background: var(--grad);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond',serif; font-size: 1.6rem; font-weight: 700;
+      margin: 0 auto 18px; box-shadow: 0 6px 24px rgba(107,31,58,.55);
+      border: 2px solid rgba(201,168,64,.3);
+    }
+    .how-step h4 { font-family: 'Cormorant Garamond',serif; font-size: 1.1rem; font-weight: 700; margin-bottom: 8px; }
+    .how-step p  { font-size: .84rem; opacity: .68; line-height: 1.7; }
+    .how-time { display: inline-block; margin-top: 10px; font-size: .74rem; color: var(--gold); font-weight: 700; background: rgba(201,168,64,.12); border-radius: 50px; padding: 3px 12px; }
+
+    /* ── GUARANTEE ── */
+    .guarantee-section { background: var(--light-rose); padding: 72px 40px; text-align: center; }
+    .guarantee-box { max-width: 700px; margin: 0 auto; }
+    .guarantee-badge { font-size: 3.5rem; margin-bottom: 20px; }
+    .guarantee-box h2 { font-family: 'Cormorant Garamond',serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; color: var(--deep-plum); margin-bottom: 16px; line-height: 1.3; }
+    .guarantee-box h2 span { color: var(--plum); font-style: italic; }
+    .guarantee-box p { font-size: .96rem; color: var(--muted); line-height: 1.9; margin-bottom: 28px; }
+    .guarantee-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .guarantee-pill {
+      background: #fff; border: 1.5px solid rgba(107,31,58,.18);
+      border-radius: 50px; padding: 8px 20px; font-size: .84rem; color: var(--deep-plum); font-weight: 700;
+    }
+
+    /* ── CTA SECTION ── */
+    .cta-section {
+      background: var(--grad); padding: 84px 40px; text-align: center; position: relative; overflow: hidden;
+    }
+    .cta-section::before { content:'✦'; position:absolute; font-size:9rem; opacity:.06; top:-20px; left:5%; pointer-events:none; color:#fff; }
+    .cta-section::after  { content:'✦'; position:absolute; font-size:7rem; opacity:.06; bottom:-10px; right:5%; pointer-events:none; color:var(--gold); }
+    .cta-inner { max-width: 620px; margin: 0 auto; position: relative; z-index: 1; }
+    .cta-section h2 { font-family: 'Cormorant Garamond',serif; font-size: clamp(1.8rem,3.5vw,2.6rem); font-weight: 700; color: #fff; margin-bottom: 12px; line-height: 1.25; }
+    .cta-section p  { color: rgba(255,255,255,.83); font-size: .97rem; margin-bottom: 30px; line-height: 1.8; }
+    .cta-scarcity { display: inline-block; background: rgba(0,0,0,.2); border-radius: 50px; padding: 6px 20px; font-size: .81rem; color: rgba(255,255,255,.9); font-weight: 700; margin-bottom: 24px; }
+    .cta-form { display: flex; flex-direction: column; gap: 12px; margin-bottom: 12px; }
+    .cta-form input {
+      width: 100%; padding: 14px 18px; border-radius: 50px; border: none;
+      font-family: 'Cairo', sans-serif; font-size: .97rem;
+      outline: none; background: rgba(255,255,255,.15); color: #fff;
+    }
+    .cta-form input::placeholder { color: rgba(255,255,255,.6); }
+    .cta-form input:focus { background: rgba(255,255,255,.25); }
+    .cta-form button {
+      width: 100%; padding: 15px; border-radius: 50px; border: none; cursor: pointer;
+      background: var(--grad-gold); color: var(--deep-plum);
+      font-family: 'Cairo', sans-serif; font-size: 1rem; font-weight: 900;
+      box-shadow: 0 4px 20px rgba(0,0,0,.2); transition: transform .2s, opacity .2s;
+    }
+    .cta-form button:hover { transform: translateY(-2px); }
+    .cta-form button:disabled { opacity: .6; cursor: not-allowed; }
+    .cta-note { font-size: .77rem; color: rgba(255,255,255,.68); }
+    @media (min-width: 540px) {
+      .cta-form { flex-direction: row; flex-wrap: wrap; }
+      .cta-form input { flex: 1 1 200px; }
+      .cta-form button { flex: 0 0 auto; padding: 15px 30px; width: auto; }
+    }
+
+    /* ── FOOTER ── */
+    footer { background: var(--deep-plum); color: rgba(255,255,255,.72); padding: 52px 40px 26px; }
+    .footer-inner { max-width: 960px; margin: 0 auto; }
+    .footer-top { display: flex; gap: 44px; flex-wrap: wrap; justify-content: space-between; margin-bottom: 36px; }
+    .footer-brand { max-width: 260px; }
+    .footer-logo-name { font-family: 'Cormorant Garamond',serif; font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 4px; }
+    .footer-logo-name span { color: var(--gold); }
+    .footer-tagline-foot { font-size: .82rem; color: rgba(255,255,255,.55); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; }
+    .footer-desc { font-size: .85rem; line-height: 1.7; }
+    .footer-links h4, .footer-contact h4 { color: var(--gold); font-size: .82rem; font-weight: 700; margin-bottom: 13px; letter-spacing: 1px; text-transform: uppercase; }
+    .footer-links ul { list-style: none; }
+    .footer-links li { font-size: .86rem; margin-bottom: 7px; color: rgba(255,255,255,.7); }
+    .contact-item { display: flex; align-items: flex-start; gap: 8px; font-size: .86rem; margin-bottom: 9px; }
+    .contact-item a { color: rgba(255,255,255,.75); text-decoration: none; transition: color .2s; }
+    .contact-item a:hover { color: #fff; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); padding-top: 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: .8rem; }
+    .footer-tags { display: flex; flex-wrap: wrap; gap: 7px; }
+    .footer-tag { background: rgba(255,255,255,.08); color: rgba(255,255,255,.75); border-radius: 50px; padding: 3px 12px; font-size: .76rem; }
+
+    /* ── FLOATING WA ── */
+    .wa-float {
+      position: fixed; bottom: 24px; right: 24px; z-index: 200;
+      width: 58px; height: 58px; border-radius: 50%; background: #25D366;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,.55); text-decoration: none;
+      transition: transform .2s; animation: pulse-wa 2.5s ease-in-out infinite;
+    }
+    .wa-float:hover { transform: scale(1.1); }
+    .wa-float svg { width: 30px; height: 30px; fill: #fff; }
+    @keyframes pulse-wa { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.55)} 50%{box-shadow:0 4px 40px rgba(37,211,102,.85)} }
+
+    /* ── SCROLL BTN ── */
+    .scroll-btn {
+      position: fixed; bottom: 24px; left: 24px; z-index: 200;
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--grad); border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(107,31,58,.5);
+      transition: transform .2s, opacity .3s;
+      opacity: 0; pointer-events: none;
+    }
+    .scroll-btn.visible { opacity: 1; pointer-events: all; }
+    .scroll-btn:hover { transform: scale(1.1); }
+    .scroll-btn svg { width: 22px; height: 22px; fill: #fff; }
+
+    /* ── TOAST ── */
+    #toast {
+      position: fixed; bottom: 90px; left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: var(--deep-plum); color: #fff;
+      padding: 12px 28px; border-radius: 50px; font-size: .88rem; font-weight: 700;
+      opacity: 0; transition: opacity .35s, transform .35s; pointer-events: none; z-index: 300; white-space: nowrap;
+    }
+    #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 920px) {
+      nav { padding: 0 20px; }
+      .hero { padding: 28px 20px 44px; }
+      .hero-inner { flex-direction: column; gap: 0; }
+      .hero-text { width: 100%; flex: 0 0 auto; }
+      .hero-form-col { width: 100%; flex: 0 0 auto; order: -1; margin-bottom: 16px; }
+      .services-section { padding: 56px 20px; }
+      .ba-section { padding: 56px 20px; }
+      .why-section { padding: 56px 20px; }
+      .stats-band { padding: 50px 20px; }
+      .how-section { padding: 60px 20px; }
+      .guarantee-section { padding: 60px 20px; }
+      .cta-section { padding: 64px 20px; }
+      footer { padding: 44px 20px 22px; }
+    }
+    @media (max-width: 640px) {
+      h1 { font-size: 2rem; }
+      .how-steps { grid-template-columns: 1fr; gap: 28px; }
+      .footer-top { gap: 28px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+    }
+    @media (max-width: 480px) {
+      .nav-cta { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ANNOUNCE BAR -->
+<div class="announce-bar">
+  ✨ Réservations limitées cette semaine<span class="dot"></span>Répondons en moins d'une heure
+</div>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">💅</div>
+    <div class="nav-logo-text">
+      <div class="name">Mayfair Glow</div>
+      <div class="sub">by Khaoula</div>
+    </div>
+  </a>
+  <div class="nav-actions">
+    <a href="https://wa.me/212772853403" class="nav-wa" target="_blank">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.564 4.143 1.547 5.878L0 24l6.305-1.524A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 0 1-5.021-1.378l-.36-.214-3.742.904.936-3.647-.235-.374A9.797 9.797 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+      WhatsApp
+    </a>
+    <a class="nav-cta" href="#leadForm">Réserver maintenant ✨</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+
+    <!-- TEXT -->
+    <div class="hero-text">
+      <div class="badge">✦ Fès · Studio de beauté premium</div>
+      <h1>
+        Des sourcils <span class="accent">sculptés</span>,<br>
+        des lèvres <span class="accent">sublimées</span>,<br>
+        <span class="gold">une beauté qui dure.</span>
+      </h1>
+
+      <div class="hero-tagline">
+        Naturel <span>•</span> Défini <span>•</span> Élégant
+      </div>
+
+      <!-- TRUST STRIP -->
+      <div class="trust-strip">
+        <div class="trust-item">⭐ 4.9/5 — +300 clientes satisfaites</div>
+        <div class="trust-item">⚡ Réponse en &lt; 1 heure</div>
+        <div class="trust-item">💎 Résultats garantis</div>
+      </div>
+
+      <p class="hero-sub">
+        Sourcils parfaitement sculptés, extensions de cils volumineuses, glaçage des lèvres irrésistible — chaque détail est travaillé avec soin pour révéler votre beauté naturelle. 💕
+      </p>
+    </div>
+
+    <!-- FORM -->
+    <div class="hero-form-col">
+      <div class="form-card" id="leadForm">
+        <div class="form-card-top">
+          <h2>✨ Réservez votre séance</h2>
+          <p>Sans engagement · Réponse rapide ⚡</p>
+          <div class="gold-pill">📍 Fès — Studio Mayfair Glow</div>
+        </div>
+        <div class="form-card-body">
+          <form id="bookingForm" novalidate>
+            <div class="field">
+              <label for="fname">Votre prénom</label>
+              <input type="text" id="fname" name="name" placeholder="Ex: Salma, Hind, Nour..." required />
+            </div>
+            <div class="field">
+              <label for="fphone">WhatsApp</label>
+              <input type="tel" id="fphone" name="phone" placeholder="+212 6XX-XXXXXX" required />
+            </div>
+            <div class="field">
+              <label for="fservice">Prestation souhaitée</label>
+              <div class="select-wrap">
+                <select id="fservice" name="service">
+                  <option value="Sourcils">💆 Sourcils (design, microblading…)</option>
+                  <option value="Extensions de cils">👁️ Extensions de cils</option>
+                  <option value="Glaçage des lèvres">💋 Glaçage des lèvres</option>
+                  <option value="Maquillage">💄 Maquillage (mariée, soirée…)</option>
+                  <option value="Consultation gratuite">🎁 Consultation gratuite</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+              Réserver maintenant — On vous rappelle 💕
+            </button>
+          </form>
+          <p class="form-note">🔒 Vos informations sont confidentielles</p>
+          <p class="form-note" style="margin-top:8px">Ou directement : <a href="https://wa.me/212772853403" target="_blank" style="color:#25D366;font-weight:700;text-decoration:none">💬 +212 772-853403</a></p>
+        </div>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="reviews">
+        <div class="review-item">
+          <img class="review-avatar" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=80&q=80" alt="Meriem" />
+          <div>
+            <div class="review-header">
+              <span class="review-name">Meriem B.</span>
+              <span class="review-stars">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">"Khaoula a transformé mes sourcils — résultat naturel et parfait. Tout le monde me demande où je vais !"</p>
+            <span class="review-tag">✓ Cliente vérifiée · Fès</span>
+          </div>
+        </div>
+        <div class="review-item">
+          <img class="review-avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&q=80" alt="Yasmine" />
+          <div>
+            <div class="review-header">
+              <span class="review-name">Yasmine K.</span>
+              <span class="review-stars">⭐⭐⭐⭐⭐</span>
+            </div>
+            <p class="review-text">"Le glaçage des lèvres est incroyable — tient toute la journée et le résultat est sublime. Je reviens chaque mois 💕"</p>
+            <span class="review-tag">✓ Cliente vérifiée · Fès</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BEFORE / AFTER -->
+<section class="ba-section">
+  <div class="section-label">Résultats réels</div>
+  <h2 class="section-title">Voyez la <span class="accent">transformation</span></h2>
+  <p class="section-sub">Glissez le curseur pour voir l'avant / après — des résultats naturels, définis et élégants</p>
+  <div class="ba-grid">
+
+    <div class="ba-card">
+      <div class="ba-slider" data-ba>
+        <div class="ba-before">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80" alt="Avant sourcils" />
+        </div>
+        <div class="ba-after">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=80" alt="Après sourcils" />
+        </div>
+        <div class="ba-handle"></div>
+      </div>
+      <div class="ba-labels"><span class="ba-label before">Avant</span><span class="ba-label after">Après ✨</span></div>
+      <div class="ba-body">
+        <div class="ba-service">Design Sourcils</div>
+        <div class="ba-result">Sourcils sculptés — naturels, définis, parfaits</div>
+        <div class="ba-note">Résultat visible dès la 1ère séance</div>
+      </div>
+    </div>
+
+    <div class="ba-card">
+      <div class="ba-slider" data-ba>
+        <div class="ba-before">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80" alt="Avant cils" />
+        </div>
+        <div class="ba-after">
+          <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&q=80" alt="Après cils" />
+        </div>
+        <div class="ba-handle"></div>
+      </div>
+      <div class="ba-labels"><span class="ba-label before">Avant</span><span class="ba-label after">Après ✨</span></div>
+      <div class="ba-body">
+        <div class="ba-service">Extensions de Cils</div>
+        <div class="ba-result">Volume, courbe, intensité — regard magnétique</div>
+        <div class="ba-note">Pose complète — durée 2h, tient 3–4 semaines</div>
+      </div>
+    </div>
+
+    <div class="ba-card">
+      <div class="ba-slider" data-ba>
+        <div class="ba-before">
+          <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&q=80" alt="Avant lèvres" />
+        </div>
+        <div class="ba-after">
+          <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&q=80" alt="Après lèvres" />
+        </div>
+        <div class="ba-handle"></div>
+      </div>
+      <div class="ba-labels"><span class="ba-label before">Avant</span><span class="ba-label after">Après ✨</span></div>
+      <div class="ba-body">
+        <div class="ba-service">Glaçage des Lèvres</div>
+        <div class="ba-result">Lèvres pulpeuses, glossy et irrésistibles</div>
+        <div class="ba-note">Résultat naturel — tient toute la journée</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="section-label">Nos Prestations</div>
+  <h2 class="section-title">Tout ce dont votre beauté <span class="accent">a besoin</span></h2>
+  <p class="section-sub">Des soins sur-mesure réalisés avec précision et passion pour révéler le meilleur de vous.</p>
+  <div class="services-grid">
+
+    <div class="service-card" onclick="selectService('Sourcils')">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1591605556543-f56a72f56765?w=600&q=80" alt="Sourcils" loading="lazy" />
+        <span class="service-badge">Le + demandé</span>
+      </div>
+      <div class="service-body">
+        <div class="service-icon">💆</div>
+        <div class="service-name">Design Sourcils</div>
+        <div class="service-desc">Épilation précise, dessin sur-mesure, lamination et microblading — des sourcils qui encadrent parfaitement votre visage.</div>
+        <div class="service-footer">
+          <div class="service-price">Sur devis <span>/ séance</span></div>
+          <a class="service-btn" href="#leadForm">Réserver →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="selectService('Extensions de cils')">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=600&q=80" alt="Extensions de cils" loading="lazy" />
+        <span class="service-badge">Volume garanti</span>
+      </div>
+      <div class="service-body">
+        <div class="service-icon">👁️</div>
+        <div class="service-name">Extensions de Cils</div>
+        <div class="service-desc">Pose classique, volume russe ou mega volume — un regard intense et lumineux sans mascara. Tient 3 à 4 semaines.</div>
+        <div class="service-footer">
+          <div class="service-price">Sur devis <span>/ pose</span></div>
+          <a class="service-btn" href="#leadForm">Réserver →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="selectService('Glaçage des lèvres')">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=600&q=80" alt="Glaçage des lèvres" loading="lazy" />
+        <span class="service-badge">Tendance 2025</span>
+      </div>
+      <div class="service-body">
+        <div class="service-icon">💋</div>
+        <div class="service-name">Glaçage des Lèvres</div>
+        <div class="service-desc">Lèvres glossy, pulpeuses et définies. Un résultat naturel et ultra-séduisant qui dure toute la journée.</div>
+        <div class="service-footer">
+          <div class="service-price">Sur devis <span>/ séance</span></div>
+          <a class="service-btn" href="#leadForm">Réserver →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="selectService('Maquillage')">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=600&q=80" alt="Maquillage" loading="lazy" />
+      </div>
+      <div class="service-body">
+        <div class="service-icon">💄</div>
+        <div class="service-name">Maquillage Professionnel</div>
+        <div class="service-desc">Maquillage de mariée, soirée, shooting photo — chaque look est pensé pour sublimer votre personnalité.</div>
+        <div class="service-footer">
+          <div class="service-price">Sur devis <span>/ look</span></div>
+          <a class="service-btn" href="#leadForm">Réserver →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="selectService('Lamination des sourcils')">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&q=80" alt="Lamination sourcils" loading="lazy" />
+        <span class="service-badge">Nouveau ✨</span>
+      </div>
+      <div class="service-body">
+        <div class="service-icon">✨</div>
+        <div class="service-name">Lamination des Sourcils</div>
+        <div class="service-desc">Sourcils peignés vers le haut, structurés et brillants — l'effet "soap brows" parfait qui dure 6 à 8 semaines.</div>
+        <div class="service-footer">
+          <div class="service-price">Sur devis <span>/ séance</span></div>
+          <a class="service-btn" href="#leadForm">Réserver →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-card" onclick="selectService('Consultation gratuite')">
+      <div class="service-img-wrap">
+        <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&q=80" alt="Consultation" loading="lazy" />
+      </div>
+      <div class="service-body">
+        <div class="service-icon">🎁</div>
+        <div class="service-name">Consultation Gratuite</div>
+        <div class="service-desc">Vous ne savez pas par où commencer ? On analyse votre morphologie et on vous conseille la prestation idéale — sans engagement.</div>
+        <div class="service-footer">
+          <div class="service-price" style="color:var(--plum)">Gratuit 🎁</div>
+          <a class="service-btn" href="#leadForm">Réserver →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHY MAYFAIR -->
+<section class="why-section">
+  <div class="section-label">Pourquoi Mayfair Glow ?</div>
+  <h2 class="section-title">La différence que vous <span class="accent">ressentez</span> dès la première visite</h2>
+  <p class="section-sub">Pas juste un salon — un studio premium où chaque détail est pensé pour vous.</p>
+  <div class="why-grid">
+    <div class="why-card">
+      <div class="why-icon">👑</div>
+      <div class="why-title">Expertise & Précision</div>
+      <div class="why-desc">Chaque prestation est réalisée avec une précision de maître. Khaoula adapte chaque technique à votre morphologie unique.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🌿</div>
+      <div class="why-title">Produits Haut de Gamme</div>
+      <div class="why-desc">Uniquement les meilleures marques professionnelles — des produits sûrs, longue durée et qui respectent votre peau.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">💫</div>
+      <div class="why-title">Résultat Dès la 1ère Séance</div>
+      <div class="why-desc">Vous repartez transformée dès la première visite. Un résultat visible, naturel et qui correspond exactement à vos attentes.</div>
+    </div>
+    <div class="why-card">
+      <div class="why-icon">🛡️</div>
+      <div class="why-title">Satisfaction Garantie</div>
+      <div class="why-desc">Si le résultat ne vous convient pas, on le refait. Sans question, sans condition. C'est notre promesse.</div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-band">
+  <div class="stats-inner">
+    <div>
+      <span class="stat-number">+300</span>
+      <span class="stat-label">Clientes satisfaites à Fès</span>
+    </div>
+    <div>
+      <span class="stat-number">3+</span>
+      <span class="stat-label">Années d'expérience</span>
+    </div>
+    <div>
+      <span class="stat-number">6</span>
+      <span class="stat-label">Prestations spécialisées</span>
+    </div>
+    <div>
+      <span class="stat-number">4.9 ⭐</span>
+      <span class="stat-label">Note moyenne clients</span>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section">
+  <div class="section-label">Comment réserver ?</div>
+  <h2 class="section-title">3 étapes simples<br><span class="accent">et c'est réglé</span></h2>
+  <p class="section-sub">Aucune complication — juste votre prénom et votre numéro.</p>
+  <div class="how-steps">
+    <div class="how-step">
+      <div class="how-num">1</div>
+      <h4>Remplissez le formulaire</h4>
+      <p>Votre prénom, WhatsApp et la prestation souhaitée — 30 secondes suffisent. Aucun engagement.</p>
+      <span class="how-time">⏱ 30 secondes</span>
+    </div>
+    <div class="how-step">
+      <div class="how-num">2</div>
+      <h4>On vous contacte</h4>
+      <p>Khaoula ou son équipe vous répond en moins d'une heure pour confirmer votre rendez-vous selon vos disponibilités.</p>
+      <span class="how-time">⚡ En moins d'1h</span>
+    </div>
+    <div class="how-step">
+      <div class="how-num">3</div>
+      <h4>Venez & repartez sublimée</h4>
+      <p>Détendez-vous — tout est pris en charge. Vous repartez transformée, avec un résultat dont vous serez fière. 💕</p>
+      <span class="how-time">✨ Résultat immédiat</span>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee-section">
+  <div class="guarantee-box">
+    <div class="guarantee-badge">💎</div>
+    <h2>Satisfaction <span>garantie</span> — un résultat qui vous ressemble</h2>
+    <p>
+      Nous avons une confiance totale dans notre savoir-faire. Si le résultat ne correspond pas à vos attentes, nous le refaisons gratuitement — sans questions, sans conditions. Ce n'est pas juste une promesse, c'est notre engagement écrit.
+    </p>
+    <div class="guarantee-pills">
+      <span class="guarantee-pill">✅ Résultat dès la 1ère séance</span>
+      <span class="guarantee-pill">✅ Satisfaction garantie</span>
+      <span class="guarantee-pill">✅ Sans conditions cachées</span>
+      <span class="guarantee-pill">✅ Produits haut de gamme</span>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-scarcity">⏳ Places limitées cette semaine — réservez maintenant</div>
+    <h2>Révélez votre beauté naturelle — dès aujourd'hui</h2>
+    <p>Chaque semaine, nos créneaux se remplissent vite. Réservez maintenant pour garantir votre place et ne pas attendre.</p>
+
+    <form class="cta-form" id="ctaForm">
+      <input type="text"  id="cta-name"  placeholder="Votre prénom" required />
+      <input type="tel"   id="cta-phone" placeholder="WhatsApp — +212 6XX XXXXXX" required />
+      <button type="submit">💕 Réserver ma place</button>
+    </form>
+    <p class="cta-note">🔒 Infos confidentielles · Réponse en moins d'une heure ⚡</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-name">Mayfair <span>Glow</span></div>
+        <div class="footer-tagline-foot">by Khaoula · Fès</div>
+        <p class="footer-desc">Studio de beauté premium à Fès — sourcils, cils, lèvres et maquillage. Résultats naturels, définis et élégants.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Prestations</h4>
+        <ul>
+          <li>💆 Design Sourcils</li>
+          <li>👁️ Extensions de Cils</li>
+          <li>💋 Glaçage des Lèvres</li>
+          <li>💄 Maquillage Pro</li>
+          <li>✨ Lamination Sourcils</li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <div class="contact-item">📍 <span>Fès, Maroc</span></div>
+        <div class="contact-item">📞 <a href="tel:+212772853403">+212 772-853403</a></div>
+        <div class="contact-item">📱 <a href="https://wa.me/212772853403" target="_blank" style="color:#25D366;font-weight:700">💬 WhatsApp — +212 772-853403</a></div>
+        <div class="contact-item">📸 <a href="https://instagram.com/mayfairglow" target="_blank">@mayfairGlow</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Mayfair Glow by Khaoula — Tous droits réservés</span>
+      <div class="footer-tags">
+        <span class="footer-tag">Fès</span>
+        <span class="footer-tag">Sourcils</span>
+        <span class="footer-tag">Extensions Cils</span>
+        <span class="footer-tag">Glaçage Lèvres</span>
+        <span class="footer-tag">Maquillage</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/212772853403" class="wa-float" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.564 4.143 1.547 5.878L0 24l6.305-1.524A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 0 1-5.021-1.378l-.36-.214-3.742.904.936-3.647-.235-.374A9.797 9.797 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+</a>
+
+<!-- Scroll to form -->
+<button class="scroll-btn" id="scrollBtn" onclick="scrollToForm()" title="Réserver">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2-13 5l-.85-1.81L6 8c4-2 9.72-3 13-1A13.5 13.5 0 0 1 17 8z"/>
+  </svg>
+</button>
+
+<div id="toast"></div>
+
+<script>
+  function scrollToForm() {
+    document.getElementById('leadForm').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  function selectService(service) {
+    const sel = document.getElementById('fservice');
+    for (let i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].value === service) { sel.selectedIndex = i; break; }
+    }
+    document.getElementById('leadForm').scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3200);
+  }
+  function genEventId() { return 'ev_' + Date.now() + '_' + Math.random().toString(36).slice(2, 9); }
+  function getCookie(name) {
+    const m = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
+    return m ? decodeURIComponent(m[1]) : undefined;
+  }
+
+  document.getElementById('bookingForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn  = document.getElementById('submitBtn');
+    const name    = document.getElementById('fname').value.trim();
+    const phone   = document.getElementById('fphone').value.trim();
+    const service = document.getElementById('fservice').value || 'Réservation - Mayfair Glow';
+    if (!name || !phone) { showToast('⚠️ Veuillez remplir le prénom et le WhatsApp'); return; }
+    btn.disabled = true; btn.textContent = '⏳ En cours...';
+    const eventId = genEventId();
+    try {
+      await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, service, eventId, userAgent: navigator.userAgent, eventSourceUrl: location.href, fbp: getCookie('_fbp'), fbc: getCookie('_fbc'), lang: 'FR' })
+      });
+    } catch (_) {}
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', {}, { eventID: eventId }); }
+    window.location.href = '/success.html';
+  });
+
+  document.getElementById('ctaForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn   = this.querySelector('button');
+    const name  = document.getElementById('cta-name').value.trim();
+    const phone = document.getElementById('cta-phone').value.trim();
+    if (!name || !phone) { showToast('⚠️ Veuillez remplir le prénom et le WhatsApp'); return; }
+    btn.disabled = true; btn.textContent = '⏳ En cours...';
+    const eventId = genEventId();
+    try {
+      await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone, service: 'Réservation - Mayfair Glow', eventId, userAgent: navigator.userAgent, eventSourceUrl: location.href, fbp: getCookie('_fbp'), fbc: getCookie('_fbc'), lang: 'FR' })
+      });
+    } catch (_) {}
+    if (typeof fbq !== 'undefined') { fbq('track', 'Lead', {}, { eventID: eventId }); }
+    window.location.href = '/success.html';
+  });
+
+  // scroll btn
+  const scrollBtn = document.getElementById('scrollBtn');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  // smooth anchor scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href').slice(1);
+      const el = document.getElementById(id);
+      if (el) { e.preventDefault(); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
+
+  // reveal on scroll
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (en.isIntersecting) {
+        en.target.style.opacity = '1';
+        en.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.why-card, .service-card, .review-item, .how-step, .guarantee-box, .ba-card, .stat-number').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(26px)';
+    el.style.transition = 'opacity .55s ease, transform .55s ease';
+    obs.observe(el);
+  });
+</script>
+
+<!-- Before/After slider -->
+<script>
+  document.querySelectorAll('[data-ba]').forEach(function(slider) {
+    var after  = slider.querySelector('.ba-after');
+    var handle = slider.querySelector('.ba-handle');
+    var drag   = false;
+    function setPos(x) {
+      var r = slider.getBoundingClientRect();
+      var p = Math.min(Math.max((x - r.left) / r.width * 100, 2), 98);
+      after.style.clipPath = 'inset(0 ' + (100 - p) + '% 0 0)';
+      handle.style.left = p + '%';
+    }
+    slider.addEventListener('mousedown',  function(e) { drag = true; setPos(e.clientX); });
+    window.addEventListener('mousemove',  function(e) { if (drag) setPos(e.clientX); });
+    window.addEventListener('mouseup',    function()  { drag = false; });
+    slider.addEventListener('touchstart', function(e) { drag = true; setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchmove',  function(e) { if (drag) setPos(e.touches[0].clientX); }, { passive: true });
+    window.addEventListener('touchend',   function()  { drag = false; });
+  });
+</script>
+</body>
+</html>

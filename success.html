@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Réservation confirmée — Mayfair Glow by Khaoula</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+  <!-- Meta Pixel -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+  (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init','PIXEL_ID_HERE');
+  fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=PIXEL_ID_HERE&ev=PageView&noscript=1"/></noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(135deg, #F9EEF3 0%, #FBF5E0 60%, #F9EEF3 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #2A0A15;
+    }
+    .card {
+      background: #fff;
+      border-radius: 26px;
+      padding: 52px 44px;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 12px 64px rgba(107,31,58,.2);
+      border: 1.5px solid rgba(107,31,58,.1);
+      animation: pop .5s cubic-bezier(.175,.885,.32,1.275) both;
+    }
+    @keyframes pop {
+      from { transform: scale(.88); opacity: 0; }
+      to   { transform: scale(1);   opacity: 1; }
+    }
+    .brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: #6B1F3A; margin-bottom: 20px;
+      letter-spacing: .5px;
+    }
+    .brand-name span { color: #C9A840; }
+    .check-circle {
+      width: 90px; height: 90px; border-radius: 50%;
+      background: linear-gradient(135deg, #8B2B4C, #3D0F20);
+      display: inline-flex; align-items: center; justify-content: center;
+      font-size: 2.8rem; margin-bottom: 24px;
+      box-shadow: 0 6px 32px rgba(107,31,58,.38);
+    }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 700; color: #3D0F20; margin-bottom: 12px; }
+    .sub { font-size: .97rem; color: #7A4459; margin-bottom: 28px; line-height: 1.8; }
+    .sub strong { color: #6B1F3A; }
+
+    .steps {
+      background: #F9EEF3; border-radius: 16px;
+      padding: 20px 24px; text-align: left;
+      margin-bottom: 24px; border: 1px solid rgba(107,31,58,.1);
+    }
+    .steps h3 { font-size: .88rem; font-weight: 700; color: #6B1F3A; margin-bottom: 13px; letter-spacing: .5px; text-transform: uppercase; }
+    .step { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 10px; font-size: .9rem; color: #7A4459; }
+    .step:last-child { margin-bottom: 0; }
+    .step-num {
+      width: 26px; height: 26px; border-radius: 50%;
+      background: linear-gradient(135deg, #8B2B4C, #3D0F20);
+      color: #fff; font-size: .75rem; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; margin-top: 1px;
+    }
+
+    .contact-note {
+      background: #F9EEF3; border: 1.5px solid #D4849A;
+      border-radius: 14px; padding: 16px 20px;
+      font-size: .93rem; color: #7A4459;
+      margin-bottom: 20px; line-height: 1.75;
+    }
+    .contact-note strong { color: #6B1F3A; display: block; margin-bottom: 4px; font-size: .97rem; }
+
+    .wa-btn {
+      display: flex; align-items: center; justify-content: center; gap: 9px;
+      width: 100%; padding: 14px;
+      background: #25D366; color: #fff;
+      border-radius: 50px; font-family: 'Cairo', sans-serif;
+      font-size: .97rem; font-weight: 700; text-decoration: none;
+      box-shadow: 0 4px 20px rgba(37,211,102,.4); transition: opacity .2s, transform .2s;
+      margin-bottom: 14px;
+    }
+    .wa-btn:hover { opacity: .92; transform: translateY(-2px); }
+
+    .back-btn {
+      display: inline-block; color: #8B2B4C;
+      font-size: .86rem; font-weight: 600;
+      text-decoration: none; opacity: .75;
+      transition: opacity .2s;
+    }
+    .back-btn:hover { opacity: 1; }
+
+    .confetti { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: -1; }
+    .dot {
+      position: absolute; border-radius: 50%;
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      from { transform: translateY(-20px) rotate(0deg); opacity: 1; }
+      to   { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+    }
+    @media (max-width: 480px) {
+      .card { padding: 36px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="confetti" id="confetti"></div>
+
+<div class="card">
+  <div class="brand-name">Mayfair <span>Glow</span> by Khaoula</div>
+  <div class="check-circle">✨</div>
+  <h1>Réservation reçue !</h1>
+  <p class="sub">Merci pour votre confiance en <strong>Mayfair Glow</strong>.<br>Notre équipe vous contacte très bientôt pour confirmer votre rendez-vous. 💕</p>
+
+  <div class="steps">
+    <h3>Que se passe-t-il maintenant ?</h3>
+    <div class="step">
+      <span class="step-num">1</span>
+      <span>Khaoula a reçu votre demande et la consulte maintenant</span>
+    </div>
+    <div class="step">
+      <span class="step-num">2</span>
+      <span>Elle vous contacte par WhatsApp pour confirmer l'heure qui vous convient</span>
+    </div>
+    <div class="step">
+      <span class="step-num">3</span>
+      <span>Venez au studio et repartez sublimée 💕</span>
+    </div>
+  </div>
+
+  <div class="contact-note">
+    <strong>📞 Nous vous rappelons très bientôt</strong>
+    Assurez-vous que votre téléphone est disponible — Khaoula vous contactera en moins d'une heure pour finaliser votre rendez-vous 🌸
+  </div>
+
+  <a class="wa-btn" href="https://wa.me/212772853403?text=Bonjour%20Khaoula%2C%20je%20viens%20de%20réserver%20via%20le%20site%20%F0%9F%8C%B8" target="_blank">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.138.564 4.143 1.547 5.878L0 24l6.305-1.524A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.797 9.797 0 0 1-5.021-1.378l-.36-.214-3.742.904.936-3.647-.235-.374A9.797 9.797 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    Écrire directement sur WhatsApp
+  </a>
+
+  <a class="back-btn" href="/">← Retour à la page d'accueil</a>
+</div>
+
+<script>
+  const colors = ['#8B2B4C','#D4849A','#C9A840','#3D0F20','#F9EEF3','#FBF5E0'];
+  const c = document.getElementById('confetti');
+  for (let i = 0; i < 35; i++) {
+    const d = document.createElement('div');
+    d.className = 'dot';
+    d.style.cssText = `
+      left: ${Math.random()*100}%;
+      background: ${colors[Math.floor(Math.random()*colors.length)]};
+      width: ${5+Math.random()*9}px;
+      height: ${5+Math.random()*9}px;
+      animation-duration: ${3+Math.random()*4}s;
+      animation-delay: ${Math.random()*3}s;
+      opacity: ${.35+Math.random()*.65};
+    `;
+    c.appendChild(d);
+  }
+</script>
+</body>
+</html>
