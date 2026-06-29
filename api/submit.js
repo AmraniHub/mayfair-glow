@@ -9,9 +9,11 @@ export default async function handler(req, res) {
     return res.status(400).json({ error: 'Missing required fields' });
   }
 
-  const SHEET_URL   = process.env.GOOGLE_SHEET_URL;
-  const PIXEL_ID    = process.env.META_PIXEL_ID;
-  const ACCESS_TOKEN = process.env.META_ACCESS_TOKEN;
+  const SHEET_URL      = process.env.GOOGLE_SHEET_URL;
+  const PIXEL_ID       = process.env.META_PIXEL_ID;
+  const ACCESS_TOKEN   = process.env.META_ACCESS_TOKEN;
+  const TG_TOKEN       = process.env.TELEGRAM_BOT_TOKEN;
+  const TG_CHAT_ID     = process.env.TELEGRAM_CHAT_ID;
 
   const timestamp = Math.floor(Date.now() / 1000);
 
@@ -52,6 +54,20 @@ export default async function handler(req, res) {
           }],
           access_token: ACCESS_TOKEN
         })
+      });
+    } catch (_) {}
+  }
+
+  // Send Telegram notification
+  if (TG_TOKEN && TG_CHAT_ID) {
+    try {
+      const date = new Date().toLocaleString('fr-MA', { timeZone: 'Africa/Casablanca', hour12: false });
+      const waLink = `https://wa.me/${phone.replace(/\D/g, '')}`;
+      const msg = `🌸 *ليد جديد — Mayfair Glow*\n\n👤 *الاسم:* ${name}\n📱 *الواتساب:* ${phone}\n⏰ ${date}\n\n💬 [فتح واتساب](${waLink})`;
+      await fetch(`https://api.telegram.org/bot${TG_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ chat_id: TG_CHAT_ID, text: msg, parse_mode: 'Markdown' })
       });
     } catch (_) {}
   }
